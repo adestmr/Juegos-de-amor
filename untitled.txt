@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Amor - Acertijos de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Amor, ¡Bienvenida a nuestro juego de acertijos!</h1>
+
+        <div id="acertijo">
+            <h2>Acertijo 1:</h2>
+            <p>¿Qué cosa es mía, pero todos la usan más que yo?</p>
+            <input type="text" id="respuesta" placeholder="Escribe tu respuesta aquí">
+            <button onclick="verificarRespuesta(1)">Comprobar</button>
+            <p id="resultado"></p>
+        </div>
+
+        <div id="carta" class="hidden">
+            <h2>Carta de Amor:</h2>
+            <p>Mi amor, cada día contigo es un regalo maravilloso. Te amo con todo mi corazón.</p>
+            <button onclick="mostrarSiguiente(2)">Siguiente Acertijo</button>
+        </div>
+
+        <div id="acertijo2" class="hidden">
+            <h2>Acertijo 2:</h2>
+            <p>Siempre está frente a ti, pero no puedes verlo. ¿Qué es?</p>
+            <input type="text" id="respuesta2" placeholder="Escribe tu respuesta aquí">
+            <button onclick="verificarRespuesta(2)">Comprobar</button>
+            <p id="resultado2"></p>
+        </div>
+
+        <div id="carta2" class="hidden">
+            <h2>Carta de Amor:</h2>
+            <p>Mi amor, en cada acertijo veo nuestra historia de amor, tan única y especial.</p>
+            <button onclick="finalizarJuego()">Finalizar Juego</button>
+        </div>
+
+        <div id="propuesta" class="hidden">
+            <h2>Propuesta Especial:</h2>
+            <p>Mi amor, al resolver este último acertijo, quiero pedirte algo muy especial. ¿Celebraremos tu cumpleaños juntos?</p>
+            <button onclick="celebrarCumple()">Sí, quiero celebrar contigo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
